@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:5000
+
+
+### Get all events (default 5)
+GET {{baseUrl}}/events
+
+### Get 3 events
+GET {{baseUrl}}/events?take=3
+
+### Get events in English
+GET {{baseUrl}}/events?language=en
+
+### Get events in Norwegian
+GET {{baseUrl}}/events?language=no
+
+### Get events for Main campus
+GET {{baseUrl}}/events?campus=Main
+
+### Get events for Faculty audience
+GET {{baseUrl}}/events?audience=Faculty
+
+### Get 2 Norwegian events for Main campus
+GET {{baseUrl}}/events?take=2&language=no&campus=Main
+
+### Get 3 English events for Faculty audience
+GET {{baseUrl}}/events?take=3&language=en&audience=Faculty
+
+### Get all events for Science campus
+GET {{baseUrl}}/events?campus=Science
+
+### Get events for Public audience
+GET {{baseUrl}}/events?audience=Public
+
+### Get events with all filters
+GET {{baseUrl}}/events?take=4&language=en&campus=Main&audience=Students 
